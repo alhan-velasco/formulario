@@ -1,0 +1,15 @@
+.movie-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
+  .movie-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 1rem;
+    width: calc(33.333% - 1rem);
+  }
+  
