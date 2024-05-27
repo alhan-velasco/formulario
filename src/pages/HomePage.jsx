@@ -8,8 +8,12 @@ const HomePage = () => {
   const [movies, setMovies] = useState(new LinkedList());
 
   const addMovie = (movie) => {
-    movies.add(movie);
-    setMovies(new LinkedList(movies));
+    const updatedMovies = new LinkedList();
+    updatedMovies.head = movies.head; 
+    updatedMovies.size = movies.size;  
+    updatedMovies.add(movie);
+    console.log('Películas actuales:', updatedMovies.toArray()); 
+    setMovies(updatedMovies);
   };
 
   return (

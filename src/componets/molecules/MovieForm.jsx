@@ -11,6 +11,7 @@ const MovieForm = ({ onAddMovie }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const newMovie = { nombre, director, fecha };
+    console.log('Datos de la nueva película:', newMovie);
     onAddMovie(newMovie);
     setNombre('');
     setDirector('');
